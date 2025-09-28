@@ -1,0 +1,120 @@
+/* GLOBAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+  background: #A8BBA3;
+  padding: 1rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: center; /* Center links horizontally */
+  gap: 2rem;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav a {
+  position: relative;      /* Needed for the ::after positioning */
+  color: rgb(35, 35, 35);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Create the animated underline */
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;            /* Distance below the text */
+  width: 0;                /* Start hidden */
+  height: 2px;             /* Thickness of underline */
+  background-color: #191919;
+  transition: width 0.3s ease; /* Animation effect */
+}
+
+/* On hover, expand the underline */
+.nav a:hover::after {
+  width: 100%;             /* Slide from left to right */
+}
+
+.nav a:hover {
+  color: #191919;
+}
+
+
+
+/* MAIN CONTAINER */
+.container {
+  display: flex;
+  flex: 1; /* Take up remaining space */
+  background: #F7F4EA;
+}
+
+/* SIDEBAR */
+.sidebar {
+  background: #EBD9D1;
+  color: #191919;
+  width: 200px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;   /* Align items from top */
+  align-items: flex-start;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* Center vertically */
+  align-items: flex-start;   /* Align text to left */
+}
+
+/* FOOTER */
+.footer {
+  background: #B87C4C;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack sidebar on top */
+  }
+
+  .sidebar {
+    width: 100%;
+    align-items: center;
+  }
+
+  .main-content {
+    align-items: center; /* Center content for smaller screens */
+    text-align: center;
+  }
+
+  .nav {
+    flex-wrap: wrap; /* Allow nav links to wrap */
+    gap: 1rem;
+  }
+}
