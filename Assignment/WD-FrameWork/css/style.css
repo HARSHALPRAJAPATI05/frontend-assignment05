@@ -1,0 +1,195 @@
+* {
+    font-family: "Inter", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.whatsappbtn {
+    border: 1px solid #27AE60;
+    padding: 10px 18px;
+    color: #27AE60;
+    font-size: 16px;
+}
+
+.whatsappbtn i {
+    color: #27AE60;
+}
+
+.whatsappbtn:hover {
+    border: 1px solid #27AE60;
+}
+
+.call {
+    background: linear-gradient(to right, #0ACEFE, #2699FB);
+    color: white;
+    font-size: 16px;
+    padding: 10px 18px;
+
+}
+
+.bannerContent h1 {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.bannerContent p {
+    font-size: 22px;
+}
+
+.bannerContent h1 span {
+    color: #2699FB;
+    background: url("../img/underline.png") no-repeat bottom;
+}
+
+.bannerContent ul {
+    list-style: none;
+}
+
+.bannerContent ul li {
+    font-size: 22px;
+}
+
+.bannerContent ul li i {
+    color: #2699FB;
+}
+
+.bannerContentBtn button {
+    width: 50%;
+    padding: 10px 0px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.bannerContentBtn button:first-child {
+    background: linear-gradient(to right, #0ACEFE, #2699FB);
+    color: white;
+}
+
+.bannerContent button:hover {
+    transform: scale(1.05);
+}
+
+.bannerForm {
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.bannerForm h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* .bannerForm p{
+    font-size: 16px;
+} */
+
+.bannerForm p,
+.bannerForm label,
+.bannerForm input,
+.bannerFormPhone {
+    font-size: 16px;
+}
+
+.bannerForm button {
+    background: linear-gradient(to right, #0ACEFE, #2699FB);
+    color: white;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.bannerForm button:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+.counterSection h2 {
+    font-size: 30px;
+    color: #2699FB;
+    font-weight: 700;
+}
+
+.highlightsSection {
+    background-color: #F7FAFF;
+}
+
+.highlightsSection h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.highlightsSection p {
+    font-size: 18px;
+}
+
+.bookBtn {
+    width: 50%;
+    background: linear-gradient(to right, #0ACEFE, #2699FB);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.bookBtn:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+.tabItemsContent ul {
+    list-style: none;
+}
+
+.tabItemsContent ul li i {
+    color: #2699FB;
+}
+
+.tabMySystem .nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: #F2F4F7;
+    color: #000000;
+    border-bottom: 2px solid #2699FB;
+}
+
+.cardFont h5 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: start;
+}
+
+.cardFont p {
+    font-size: 15px;
+    text-align: start;
+}
+
+.certySection {
+    background-color: #F7FAFF;
+}
+
+.certySection h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.certySection p {
+    font-size: 18px;
+    /* padding-left: 10px; */
+}
+
+.certyText h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.certyText p {
+    font-size: 16px;
+}
+
+.certyBtn{
+    width: 50%;
+    background: linear-gradient(to right, #0ACEFE, #2699FB);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.certyBtn:hover{
+    color: white;
+    transform: scale(1.05);
+}
